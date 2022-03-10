@@ -268,7 +268,7 @@ class Coverflow extends Component {
       // If on the active figure
       if (typeof action === 'string') {
         // If action is a URL (string), follow the link
-        window.open(action, '_blank');
+        window && window.open(action, '_blank');
       }
 
       this._removePointerEvents();
